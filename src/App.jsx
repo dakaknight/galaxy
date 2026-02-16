@@ -16,7 +16,7 @@ export default function App(){
 
   useEffect(()=>{
     const timer = setTimeout(()=>{
-      fetch('/src/data/influencers_east_africa.json')
+      fetch('/data/influencers_east_africa.json')
         .then(r=>r.json())
         .then(d=>{
           setData(d); setFiltered(d); setLoading(false)
